@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Beautiful Girl ❤️</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Magic Word Entry Page -->
+    <div id="entry-page" class="page active">
+        <div class="container">
+            <div class="card">
+                <h1 class="title">
+                    Hey pretty, what's the magic word?
+                    <span class="heart">❤️</span>
+                </h1>
+                <div class="input-container">
+                    <input 
+                        type="text" 
+                        id="magic-input" 
+                        placeholder="magic word here princess..." 
+                        autocomplete="off"
+                    >
+                    <div id="hidden-text" class="hidden-text"></div>
+                </div>
+                <button id="enter-btn" class="enter-btn">Enter</button>
+                <p id="error-message" class="error-message"></p>
+            </div>
+        </div>
+        <div class="heart-rain"></div>
+    </div>
+
+    <!-- Reveal Page -->
+    <div id="reveal-page" class="page">
+        <div class="reveal-container">
+            <div class="reveal-content">
+                <h1 class="reveal-title">Amanjalee</h1>
+                <p class="reveal-subtitle">You found the magic word! ✨</p>
+                
+                <div class="message-card">
+                    <h2>For You, My Love 💕</h2>
+                    <p class="love-message">
+                        Every day with you feels like magic. Your name itself is a spell that makes my heart skip a beat. 
+                        You are the most beautiful person I know, inside and out. 
+                        This little corner of the internet is just for you, because you deserve all the love in the world.
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart-circle-check"></i>
+                        </div>
+                        <h3>Beautiful</h3>
+                        <p>Just like you</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3>Magical</h3>
+                        <p>Like our moments</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>Special</h3>
+                        <p>Just for you</p>
+                    </div>
+                </div>
+
+                <!-- Favorite Songs Section -->
+                <div class="section-card">
+                    <div class="section-header">
+                        <div class="section-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h2>Our Favorite Songs</h2>
+                    </div>
+                    <div class="songs-grid">
+                        <!-- Song Card 1 -->
+                        <div class="song-card" data-song-url="songs/Numbe As (නඹ ඇස)  - Visal Adare Movie   Yasas, Yashodha  Sachin, Rashiprabha, Nimesh, Dinakshie.mp3">
+                            <div class="song-thumbnail">
+                                <img src="images/Thumbnail/G7QtmWmkRWo-HD.jpg" alt="Numbe As" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect fill=%22%23ffb3d9%22 width=%22400%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2240%22 fill=%22%23ff69b4%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3E🎵%3C/text%3E%3C/svg%3E'">
+                                <div class="play-overlay">
+                                    <button class="play-btn-card">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="song-info-card">
+                                <h3 class="song-title-card">Numbe As</h3>
+                            </div>
+                            <audio class="song-audio" preload="none">
+                                <source src="songs/Numbe As (නඹ ඇස)  - Visal Adare Movie   Yasas, Yashodha  Sachin, Rashiprabha, Nimesh, Dinakshie.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+
+                        <!-- Song Card 2 -->
+                        <div class="song-card" data-song-url="songs/Mihiran - Mulawe (මලව) feat. Themiya Thejan.mp3">
+                            <div class="song-thumbnail">
+                                <img src="images/Thumbnail/3H3gKSi1wrw-SD.jpg" alt="Mulawe" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect fill=%22%23ffb3d9%22 width=%22400%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2240%22 fill=%22%23ff69b4%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3E🎵%3C/text%3E%3C/svg%3E'">
+                                <div class="play-overlay">
+                                    <button class="play-btn-card">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="song-info-card">
+                                <h3 class="song-title-card">Mulawe</h3>
+                            </div>
+                            <audio class="song-audio" preload="none">
+                                <source src="songs/Mihiran - Mulawe (මලව) feat. Themiya Thejan.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+
+                        <!-- Song Card 3 -->
+                        <div class="song-card" data-song-url="songs/Amathaka Wee Noya (අමතක ව නය) - Supun Perera ft Yasas Medagedara  Neera Movie  Shanudrie.mp3">
+                            <div class="song-thumbnail">
+                                <img src="images/Thumbnail/dJIX1f8UTIQ-HD.jpg" alt="Amathaka wee noya" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect fill=%22%23ffb3d9%22 width=%22400%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2240%22 fill=%22%23ff69b4%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3E🎵%3C/text%3E%3C/svg%3E'">
+                                <div class="play-overlay">
+                                    <button class="play-btn-card">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="song-info-card">
+                                <h3 class="song-title-card">Amathaka wee noya</h3>
+                            </div>
+                            <audio class="song-audio" preload="none">
+                                <source src="songs/Amathaka Wee Noya (අමතක ව නය) - Supun Perera ft Yasas Medagedara  Neera Movie  Shanudrie.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+
+                        <!-- Song Card 4 -->
+                        <div class="song-card" data-song-url="songs/Dhyan Hewage _ Pasan Liyanage - Hithawanthi (හතවනත)  Official Music Video.mp3">
+                            <div class="song-thumbnail">
+                                <img src="images/Thumbnail/Td8BL6iuzps-HD.jpg" alt="Hithawanthi" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect fill=%22%23ffb3d9%22 width=%22400%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2240%22 fill=%22%23ff69b4%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3E🎵%3C/text%3E%3C/svg%3E'">
+                                <div class="play-overlay">
+                                    <button class="play-btn-card">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="song-info-card">
+                                <h3 class="song-title-card">Hithawanthi</h3>
+                            </div>
+                            <audio class="song-audio" preload="none">
+                                <source src="songs/Dhyan Hewage _ Pasan Liyanage - Hithawanthi (හතවනත)  Official Music Video.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+
+                        <!-- Song Card 5 -->
+                        <div class="song-card" data-song-url="songs/Eranga Abeygunasekara - Kailashini (කලශන) - Official Music Video.mp3">
+                            <div class="song-thumbnail">
+                                <img src="images/Thumbnail/zXAz0atZ8No-HD.jpg" alt="Kailashini" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect fill=%22%23ffb3d9%22 width=%22400%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2240%22 fill=%22%23ff69b4%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3E🎵%3C/text%3E%3C/svg%3E'">
+                                <div class="play-overlay">
+                                    <button class="play-btn-card">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="song-info-card">
+                                <h3 class="song-title-card">Kailashini</h3>
+                            </div>
+                            <audio class="song-audio" preload="none">
+                                <source src="songs/Eranga Abeygunasekara - Kailashini (කලශන) - Official Music Video.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+
+                        <!-- Song Card 6 -->
+                        <div class="song-card" data-song-url="songs/Santhana Susum  සනතන සසම Suneera Sumanga Ft Thilina Ruhunage (Official Lyric Video).mp3">
+                            <div class="song-thumbnail">
+                                <img src="images/Thumbnail/0skoSX_d738-HD.jpg" alt="Santhana susum" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect fill=%22%23ffb3d9%22 width=%22400%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2240%22 fill=%22%23ff69b4%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3E🎵%3C/text%3E%3C/svg%3E'">
+                                <div class="play-overlay">
+                                    <button class="play-btn-card">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="song-info-card">
+                                <h3 class="song-title-card">Santhana susum</h3>
+                            </div>
+                            <audio class="song-audio" preload="none">
+                                <source src="songs/Santhana Susum  සනතන සසම Suneera Sumanga Ft Thilina Ruhunage (Official Lyric Video).mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+
+                        <!-- Song Card 7 -->
+                        <div class="song-card" data-song-url="songs/Dawasaka Hamuwuoth( දවසක හමවනත ) by Hasindu Bhanuka.The official music video..mp3">
+                            <div class="song-thumbnail">
+                                <img src="images/Thumbnail/cvSmtqvsxK0-HD.jpg" alt="Dawasaka hamuunoth" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect fill=%22%23ffb3d9%22 width=%22400%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2240%22 fill=%22%23ff69b4%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3E🎵%3C/text%3E%3C/svg%3E'">
+                                <div class="play-overlay">
+                                    <button class="play-btn-card">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="song-info-card">
+                                <h3 class="song-title-card">Dawasaka hamuunoth</h3>
+                            </div>
+                            <audio class="song-audio" preload="none">
+                                <source src="songs/Dawasaka Hamuwuoth( දවසක හමවනත ) by Hasindu Bhanuka.The official music video..mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+
+                        <!-- Song Card 8 -->
+                        <div class="song-card" data-song-url="songs/Mahiru Senarathne - Alen Bandi (ආලන බඳ)  Official Lyric Video.mp3">
+                            <div class="song-thumbnail">
+                                <img src="images/Thumbnail/xYa4mBxtPDA-HD.jpg" alt="Alen bandi" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect fill=%22%23ffb3d9%22 width=%22400%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2240%22 fill=%22%23ff69b4%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3E🎵%3C/text%3E%3C/svg%3E'">
+                                <div class="play-overlay">
+                                    <button class="play-btn-card">
+                                        <i class="fas fa-play"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="song-info-card">
+                                <h3 class="song-title-card">Alen bandi</h3>
+                            </div>
+                            <audio class="song-audio" preload="none">
+                                <source src="songs/Mahiru Senarathne - Alen Bandi (ආලන බඳ)  Official Lyric Video.mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reasons I Love You Section -->
+                <div class="section-card">
+                    <div class="section-header">
+                        <div class="section-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h2>Reasons Why I Love You</h2>
+                    </div>
+                      <div class="reasons-grid">
+                          <div class="reason-item">
+                              <span class="reason-number">1</span>
+                              <p>Your smile lights up my darkest days like the sun breaking through clouds it's my favorite sight in the world.</p>
+                          </div>
+                          <div class="reason-item">
+                              <span class="reason-number">2</span>
+                              <p>Holding your hand feels like home; it's warm, safe, and where I always want to be.</p>
+                          </div>
+                          <div class="reason-item">
+                              <span class="reason-number">3</span>
+                              <p>Your eyes sparkle with a love that's endless, pulling me deeper into this beautiful adventure with you.</p>
+                          </div>
+                          <div class="reason-item">
+                              <span class="reason-number">4</span>
+                              <p>You make my heart race and my soul calm all at once you're my perfect balance.</p>
+                          </div>
+                          <div class="reason-item">
+                              <span class="reason-number">5</span>
+                              <p>I love you because you make me believe in love that lasts, love that's patient, and love that's real.</p>
+                          </div>
+                          <div class="reason-item">
+                              <span class="reason-number">6</span>
+                              <p>Simply put, loving you feels like the easiest, most natural thing I've ever done. You're my everything. ❤️</p>
+                          </div>
+                      </div>
+                </div>
+
+                <!-- Love Quotes Section -->
+                <div class="section-card">
+                    <div class="section-header">
+                        <div class="section-icon">
+                            <i class="fas fa-envelope-heart"></i>
+                        </div>
+                        <h2>Love Quotes For You</h2>
+                    </div>
+                    <div class="quotes-container">
+                        <div class="quote-card">
+                            <p class="quote-text">"Are you a time traveler? Because I absolutely see you in my future."</p>
+                        </div>
+                        <div class="quote-card">
+                            <p class="quote-text">"Do you have a map? I keep getting lost in your eyes."</p>
+                        </div>
+                        <div class="quote-card">
+                            <p class="quote-text">"I'm no photographer, but I can picture us together."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photo Gallery Section -->
+                <div class="section-card">
+                    <div class="section-header">
+                        <div class="section-icon">
+                            <i class="fas fa-images"></i>
+                        </div>
+                        <h2>Our Photo Gallery</h2>
+                    </div>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="images/our/1.jpg" alt="Our memory 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="gallery-placeholder" style="display: none;">
+                                <i class="fas fa-image"></i>
+                                <p>Add your photo here</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/our/2.jpeg" alt="Our memory 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="gallery-placeholder" style="display: none;">
+                                <i class="fas fa-image"></i>
+                                <p>Add your photo here</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/our/3.jpg" alt="Our memory 3" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="gallery-placeholder" style="display: none;">
+                                <i class="fas fa-image"></i>
+                                <p>Add your photo here</p>
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="images/our/4.jpeg" alt="Our memory 4" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="gallery-placeholder" style="display: none;">
+                                <i class="fas fa-image"></i>
+                                <p>Add your photo here</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Final Message -->
+                <div class="section-card final-message">
+                    <h2>💕 Always Yours 💕</h2>
+                    <p class="final-text">
+                        Amanjalee, you mean the world to me. This website is just a small token of how much I care about you. 
+                        Every day I'm grateful to have you in my life. You are loved, cherished, and adored beyond words.
+                    </p>
+                    <div class="signature">
+                        <p>With all my love,</p>
+                        <p class="signature-name">Forever yours ❤️</p>
+                    </div>
+                </div>
+
+                <div class="heart-rain"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
